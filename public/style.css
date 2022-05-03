@@ -1,0 +1,78 @@
+/* Global Styles */
+*{
+    font-family: 'Raleway', sans-serif;
+    background-color:#B7E2CE;
+    box-sizing: border-box;
+}
+
+/* Header */
+#header{
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+}
+
+#header-home{
+    text-decoration: none;
+    color: black;
+}
+
+#header-learnMore{
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+}
+
+/* Home Page/Provinces */
+#welcome{
+    text-align: center;
+}
+
+#left.column.left{
+    margin: auto;
+    border: 3px solid black;
+    padding: 10px;
+    line-height: 1px;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+}
+
+#right.column.right{
+    margin: auto;
+    border: 3px solid green;
+    padding: 10px;
+    text-align: center;
+}
+
+#text-select{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#provinces{
+    margin: auto;
+    display: block;
+    text-align: left;
+}
+
+#search{
+    transition-duration: 0.4s;
+    padding: 10px 15px;
+}
+
+#search:hover{
+    background-color: green;
+    text-align: center; 
+}
+
+/* Models Page */
+#note{
+    font-style: italic;
+}
+
+/* Model Page */
+#model-name{
+    text-decoration: underline;
+}
