@@ -1,2 +1,0 @@
-# vehicle-incentive-app
-Test.
