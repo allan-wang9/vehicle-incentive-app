@@ -1,0 +1,68 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=chrome")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Home
+
+        link(rel="stylesheet", href="/style.css")
+
+        style.
+            .column {
+                float: left;
+            }
+            .left {
+                width: 60%;
+            }
+            .right {
+                width: 40%;
+            }
+            
+    body 
+        include ./partials/header
+
+        h1#welcome Canada Vehicle Incentive Tracker
+
+        div#main-div
+            div#left.column.left
+                h4 Find Your Vehicle
+                p 1. To begin, select a province to view a list of vehicles with potential incentives. 
+                p 2. Select a vehicle model to view incentives and specifications!
+                br
+                br
+                h4 Energy Efficient Vehicles 
+                p As we transition into a world that becomes more eco-friendly, energy efficient vehicles will be a 
+                p pivotal factor to reducing global emissions. Canada has joined many countries in mandating the
+                p sales of only electric vehicles by 2035 or earlier. Here are some of the benefits of plug-in hybrids
+                p and fully battery electric vehicles.
+                br
+                p 1. Reduce your fuel costs... especially as of recent. 
+                p 2. Lower maintenance costs.  
+                p 3. Gain tax rebates, purchase incentives and benefits.
+                p 4. Help reduce our planet's environmental footprint!
+                br
+                h4 Our Goal 
+                p We help you find the purchase incentive of your plug-in hybrid or electric vehicle based on the 
+                p province of purchase. Since all provinces have different incentive values and benefits, we sum
+                p the federal and provincial benefits and present them to you. Since it can be difficult to track 
+                p all the incentives yourself, that's where we come in to help. Happy searching for your next
+                p energy efficient vehicle!
+                
+            div#right.column.right
+                h4#text-select Select a Province
+                select#provinces(name='provinces')
+                    option(value='Alberta') Alberta
+                    option(value='British Columbia') British Columbia
+                    option(value='Manitoba') Manitoba
+                    option(value='New Brunswick') New Brunswick
+                    option(value='Newfoundland and Labrador') Newfoundland and Labrador 
+                    option(value='Nova Scotia') Nova Scotia 
+                    option(value='Ontario') Ontario 
+                    option(value='Prince Edward Island') Prince Edward Island
+                    option(value='Quebec') Quebec
+                    option(value='Saskatchewan') Saskatchewan
+                    
+                br
+                button#search(onclick='queryByProvince()') See Vehicles
+        
+        script(src='/js/province.js')        

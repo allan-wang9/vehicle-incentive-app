@@ -1,0 +1,26 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=chrome")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pugModelInfo.Model_Name} - #{pugModelInfo.Province}
+        link(rel="stylesheet", href="/style.css")
+    
+    body 
+        include ./partials/header
+
+        h3#model-name #{pugModelInfo.Brand} - #{pugModelInfo.Model_Name} 
+        h4 Incentive Details:
+        p Province: #{pugModelInfo.Province}
+        p Incentives: $#{pugModelInfo.Incentive_Value}
+
+        div#model-specs
+            h4 Vehicle Specifications:
+            p Price: $#{pugModelInfo.Price}
+            p Type: #{pugModelInfo.Type}
+            p Range: #{pugModelInfo.Range} km/charge
+            p 0-100km/h Acceleration: #{pugModelInfo.Acceleration}s 
+
+            h4 Manufacturer: 
+            p Brand: #{pugModelInfo.Brand}
+            p Origin: #{pugModelInfo.Country}

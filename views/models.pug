@@ -1,0 +1,20 @@
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=chrome")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Models - #{pugSelectedProvince.selectedProvince} 
+        link(rel="stylesheet", href="/style.css")
+    
+    body 
+        include ./partials/header
+
+        p Vehicles with potential incentives in #{pugSelectedProvince.selectedProvince}. Select a model below for full incentives and details!
+        p#note Note, the provincial and federal incentives can change at any time.
+
+        div#models-list
+
+            if pugListOfModels != undefined
+            each key in pugListOfModels 
+                a#model-element(href="/models/" + pugSelectedProvince.selectedProvince + "/" + key.model_id) #{key.brand} - #{key.model_name}
+                br
